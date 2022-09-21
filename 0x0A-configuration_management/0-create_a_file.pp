@@ -1,7 +1,8 @@
-# Creating A file in tmp folder named holberton
+# creates a file in the /tmp directory
 file { '/tmp/holberton':
-    ensure  => 'present',
-    mode    => '0744',
-    owner   => 'www-data',
-    group   => 'www-data',
-    content => 'I love Puppet', }
+  ensure  => 'file',
+  mode    => '0744',
+  owner   => 'www-data',
+  group   => 'www-data',
+  content => 'I love Puppet',
+}
